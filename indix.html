@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap" rel="stylesheet">
+<!--to create night mode put the style tag in the head cuz it isnot work in body create div join all of elements in body-->
+    <style>
+        body
+        {
+            font-family: 'Delius Swash Caps';
+        }
+ 
+        .dd
+        {
+            height: 30;
+            color: azure;
+        }
+        .img img
+        {
+            width: 100%;
+            object-fit: cover;
+        }
+        .img:hover
+        {
+            opacity: 50%;
+            transform: scale(1.1);
+        }
+        .img:hover::after
+        {
+            content: attr(data-caption);
+            top:50%;
+            left:50%;
+            color: azure;
+            background-color: rgb(47, 47, 47);
+            font-size: medium;
+            position: absolute;
+        }
+        #checkbox:checked+.main
+        {
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="checkbox">night moode
+<div class="main">
+
+<!--in the style we use the. for class and use # for id-->
+<div class="container text-center">
+<h1>web colors</h1><br>
+
+
+<div class="row ">
+        <div class="col-md-3">
+        <div class="dd card shadow"style="background-color:#DF92DF ;">
+        <h3>pink</h3></div><br></div>
+
+<div class="col-md-3">
+    <div class="dd card shadow"style="background-color:#A8E88D ;">
+    <h3>green</h3></div><br></div>
+
+<div class="col-md-3">
+    <div class="dd card shadow"style="background-color:#8DA3E8 ;">
+    <h3>blue</h3></div><br></div>
+
+<div class="col-md-3">
+    <div class="dd card shadow"style="background-color:#E28587 ;">
+    <h3>red</h3></div><br></div>
+</div>
+</div>
+<!--!_____________________________________________________________-->
+<div style="background-color: rgba(152, 152, 152, 0.265);" >
+    <div  class="container text-center">
+    <h1>photo gallery</h1><br>
+     <div class="row">
+        <div class="col-md-3">
+            <div class="img" data-caption="photo1">
+                <a href="https://cdn.pixabay.com/photo/2023/11/05/15/24/autumn-8367628_1280.jpg">
+                    <img src="https://cdn.pixabay.com/photo/2023/11/05/15/24/autumn-8367628_1280.jpg"width="200"height="200">
+                </a>
+            </div>
+        </div>
+        
+        
+        <div class="col-md-3">
+            <div class="img"data-caption="photo2">
+                <a href="https://cdn.pixabay.com/photo/2023/10/29/16/07/chrysanthemum-8350644_1280.jpg">
+                    <img src="https://cdn.pixabay.com/photo/2023/10/29/16/07/chrysanthemum-8350644_1280.jpg"width="200"height="200">
+                </a>
+            </div>
+        </div>
+        
+        <div class="col-md-3">
+            <div class="img"data-caption="photo3">
+                <a href="https://cdn.pixabay.com/photo/2023/11/12/15/42/flowers-8383322_1280.jpg">
+                    <img src="https://cdn.pixabay.com/photo/2023/11/12/15/42/flowers-8383322_1280.jpg"width="200"height="200">
+                </a>
+            </div>
+        </div>
+        
+        <div class="col-md-3">
+            <div class="img"data-caption="photo4">
+                <a href="https://cdn.pixabay.com/photo/2023/11/09/13/21/swallowtail-butterfly-8377375_1280.jpg">
+                    <img src="https://cdn.pixabay.com/photo/2023/11/09/13/21/swallowtail-butterfly-8377375_1280.jpg"width="200"height="200">
+                </a>
+            </div>
+        </div>
+        
+    </div>
+
+
+</div>
+<!--!_____________________________________________________________-->
+<br><br>
+<footer class="text-white" style="background-color: rgba(26, 26, 26, 0.756);">
+<div class="container">
+<div class="row">
+    <div class="col-md-3">
+        <h4>=links</h4>
+        <ul class="list-unstyled">
+            <li><a href="">link_1</a>
+            <li><a href="">link_2</a>
+            <li><a href="">link_3</a>
+            <li><a href="">link_4</a>
+
+        </ul>
+    </div>
+    <div class="col-md-3">
+        <h4>=links</h4>
+        <ul class="list-unstyled">
+            <li><a href="">link_1</a>
+            <li><a href="">link_2</a>
+            <li><a href="">link_3</a>
+            <li><a href="">link_4</a>
+
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <h4>policy privcy</h4>
+        <p>All of your messages. In one inbox<br>
+            All In One. · Privacy First. · Assisted by AI. · A better inbox<br>
+            And much more. · Supercharge your messaging.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</footer>
+</div><!--end of main div-->
+</body>
+</html>
